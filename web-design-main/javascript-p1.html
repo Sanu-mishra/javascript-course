@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <title>javascript finish-up</title>
+</head>
+<style>
+    .click{
+        background-color: burlywood;
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <button class="click" onclick="loading()">click me.</button>
+    <h2 id="demo">DEMO</h2>
+    <button class="click" onclick="colorChange()">color-change</button>
+    <script src="index.js">
+        function loading(){
+    document.getElementById("click").innerHTML = "loading...";
+    setTimeout(function(){
+        document.getElementById("click").innerHTML = "hey..."
+    }, 2000);
+}
+
+function colorChange(){
+    document.getElementById("demo").style.color = "blue";
+}
+
+let age=18;
+
+if(age >= 18){
+    console.log("you are eligible for playing GTA 6");
+}
+
+else{
+    console.log("you are not eligible for playing GTA 6");
+}
+
+let grade = 'A';
+
+switch(grade){
+case 'A': console.log("first division");
+    break;
+case 'B': console.log("second division");
+    break;
+case 'C': console.log("third division");
+    break;
+default:
+    console.log("fail");
+}
+
+let marks = window.prompt("enter your marks");
+if(marks >= 90){
+    console.log("marks are above 90");
+}
+else if(marks>=70&&marks<90){
+    console.log("marks are less than 90 but greater than 70");
+}
+
+else if(marks >= 50 && marks < 70){
+    console.log("marks are less than 70 but greater than 50");
+}
+
+else{
+    console.log("marks are less than 50");
+}
+
+    </script>
+</body>
+</html> 
